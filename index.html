@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+
+<body>
+    <div id="display"></div>
+    <script>
+        const socket = new WebSocket('ws://localhost:8080');
+        socket.onmessage = function (event) {
+            document.getElementById("display").innerHTML += event.data + "<br>";
+            console.log(JSON.parse(event.data));
+        };
+        socket.onopen = function () {
+            console.log('Connected to WebSocket server.');
+        };
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "com_to_file_to_ws",
+  "version": "1.0.0",
+  "description": "Websocket server for ALGE COMtoFile software ( TIMY3 )",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZonEcron/COMtoFiletoWS.git"
+  },
+  "keywords": [
+    "ALGE",
+    "TIMY3",
+    "COMtoFile",
+    "websocket"
+  ],
+  "author": "Jon Bilbao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZonEcron/COMtoFiletoWS/issues"
+  },
+  "homepage": "https://github.com/ZonEcron/COMtoFiletoWS#readme",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
